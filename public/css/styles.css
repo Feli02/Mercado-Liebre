@@ -1,0 +1,527 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+}
+
+.main-header{
+    background-color: #EAC926;
+    padding: 20px;
+    top: 0;
+    width: 100%;
+}
+
+.logo{
+    width: 50%px;
+    text-align: center;
+}
+
+/*Search Bar*/
+.top-header .search-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.search-container{
+    align-items: center;
+}
+
+.top-header input[type='search'] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 20px;
+    border: none;
+    border-radius: 8px 0 0 8px;
+}
+
+.top-header .search-container button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 16px;
+    background: #ddd;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 0 8px 8px 0;
+}
+
+.top-header .search-container button:hover {
+    background: #ccc;
+}
+
+/*Fin Search Bar*/
+
+.copy-header{
+    font-weight: 400;
+    text-align: center;
+}
+
+div.burger-menu{
+    text-align: center;
+}
+
+div.burger-menu i{
+    background-color: #02364C;
+    color: #ffffff;
+    display: block;
+    max-width: 50px;
+    padding: 15px 0;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 18px;
+    margin: auto;
+}
+
+div.burger-menu i:hover{
+    cursor: pointer;
+    background-color: #0022AA;
+}
+
+.main-nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav a{
+    text-decoration: none;
+    color: #666666;
+    display: inline-block;
+    padding: 5px 0;
+    font-size: 17px;
+    transition-duration: 0.5s;
+    transition-property: color;
+}
+
+.main-nav a:hover{
+    color:black;
+    transition:color, 0.5s;
+}
+
+.main-nav{
+    display: none;
+}
+
+.description{
+    display: none;
+}
+
+p{
+    font-size: 12px;
+}
+
+h3{
+    font-size: 24px;
+}
+
+div.last-visit,
+div.offers{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+article div.main-article{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    border-top: 1px solid #ebebeb;
+    position: relative;
+    padding: 25px;
+}
+
+.price{
+    font-size: 18px;
+    width: 30%;
+}
+
+.discount,
+.description{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.discount{
+    width: 70%;
+}
+
+.description{
+    margin-top: 20px;
+}
+
+h3,
+.description{
+    color: #666;
+}
+
+section.banner img{
+    width: 100%;
+    display: block;
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+main h3{
+    margin-top: 25px;
+    margin-bottom: 5px;
+}
+
+main section article{
+    background-color: #fff;
+    margin: 10px 0px;
+}
+
+main section article img{
+    display: block;
+    width: 92%;
+}
+
+main section article i,
+.discount{
+    color: #39b54a;
+}
+
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+footer{
+    background-color: #fff;
+    color: #666;
+    padding: 20px 5%;
+}
+
+footer article{
+    margin: 20px 0px;
+}
+
+footer i{
+    color: #1259c3;
+    transition-duration: 0.5s;
+    transition-property: color;
+}
+
+footer i:hover{
+    color: #2f4e6f;
+    transition: color, 0.5s;
+}
+
+/* Edición formularios */
+.login input,
+.register input,
+.vender input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 0px;
+}
+
+.register h3{
+    color: #333333;
+}
+
+.login div,
+.register div,
+.vender div{
+    margin: 25px 0;
+}
+
+.login button,
+.register button,
+.vender input{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 0px;
+}
+
+.login a,
+.register a,
+.vender a{
+    color: #FFF;
+    text-decoration: none;
+}
+
+.login button[type='submit'],
+.register button[type='submit'],
+.vender button[type='submit']{
+    color: #FFF;
+    background-color: #0044AA;  
+    border-radius: 5px;
+    transition-duration: 0.5s;
+    transition-property: background-color;
+}
+
+.login button[type='submit']:hover,
+.register button[type='submit']:hover,
+.vender button[type='submit']:hover{
+    background-color: #0022AA;
+    transition: background-color, 0.5s;
+}
+
+.register button[type='reset']{
+    color: #FFF;
+    background-color: #AA0044;
+    transition-duration: 0.5s;
+    transition-property: background-color;
+}
+
+.register button[type='reset']:hover{
+    background-color: #CC1155;
+    transition: background-color, 0.5s;
+}
+
+.vendedorOcomprador label,
+.interests label{
+    margin: 7px;
+}
+
+div.profile{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.register div.profile input,
+.login div.profile input{
+    width: 100%;
+}
+
+.register div.profile input:invalid:focus,
+.login div.profile input :invalid:focus{
+    background-image: linear-gradient(#ff6961,#ff6961);
+  }
+
+div.vendedorOcomprador{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+div.vendedorOcomprador{
+    width: 100%;
+    flex-wrap: nowrap;
+    align-items: left;
+}
+
+div.vendedorOcomprador input,
+div.vendedorOcomprador label{
+    width: auto
+}
+
+div.interests{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+div.interests{
+    width: 100%;
+    flex-wrap: nowrap;
+    align-items: left;
+}
+
+div.interests input,
+div.interests label{
+    width: auto
+}
+
+main section article{
+    border-radius: 5%;
+    transition-duration: 0.5s;
+    transition-property: box-shadow;
+}
+
+.main-footer article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.main-footer article i{
+    font-size: 30px;
+}
+
+.main-article i{
+    transition: 1s;
+}
+
+.main-article i:hover{
+    transform: rotate(360deg);
+}
+
+@media /*tablet*/ (min-width: 768px){
+    .main-footer article{
+        font-size: 15px;
+    }
+    
+    .articleSide{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .main-footer article{
+        flex-wrap: wrap;
+        width: 300px;
+    }
+    
+    .description{
+        display: block;
+    }
+
+    .main-article .description{
+        height: 0px;
+        overflow: hidden;
+        margin-top: 0px;
+        transition: all 0.3s ease-in;
+    }
+
+    main article:hover .description{
+        overflow: visible;
+    }
+
+    main section article:hover{
+        box-shadow :0 0 11px rgba(24, 21, 21, 0.2);
+        transition: box-shadow, 0.3s;
+    }
+
+    div.burger-menu{
+        display: none;
+    }
+
+    div.top-header{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logo{
+        width: 160px;
+    }
+
+    .copy-header{
+        max-width: 200px;
+        text-align: right;
+        font-size: 15px;
+    }
+
+    .top-header input[type='search'] {
+        font-size: 20px;
+    }
+    
+    .top-header .search-container button {
+        font-size: 20px;
+    }
+
+    .search-container{
+        align-self: center;
+        margin: 0 auto;
+    }
+
+    .main-nav{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 15px;
+    }
+
+    .main-nav ul{
+        display: flex;
+    }
+
+    .main-nav li{
+        margin: 0 5px;
+    }
+
+    main section{
+        display: flex;
+        flex-flow: wrap;
+        justify-content: space-between;
+    }
+
+    main article{
+        flex: 1 0 50%; 
+        text-align: center;
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+        max-width: 300px;
+        margin: 0.5em auto;
+    }
+
+    article p{
+        flex-grow: 1;
+    }
+}
+
+@media /*desktop*/ (min-width: 1200px){
+    .top-header, .main-nav{
+        max-width: 1400px;
+        margin:auto;
+    }
+
+    .top-header{
+        align-items: center;
+
+    }
+
+    .logo{
+        width: 250px;
+    }
+
+    .copy-header{
+        margin:0;
+        max-width: none;
+        font-size: 22px;
+        font-weight: 400;
+    }
+
+    .main-nav{
+        margin-top: 40px;
+    }
+
+    .main-nav li{
+        margin: 0 10px;
+    }
+
+    .main-nav a{
+        font-size: 20px;
+    }
+
+    main article{ 
+        flex: 1 0 30%;
+        width: 200px;
+        max-width: 250px;
+    }
+
+    .top-header input[type='search'] {
+        font-size: 25px;
+    }
+    
+    .top-header .search-container button {
+        font-size: 25px;
+    }
+}
