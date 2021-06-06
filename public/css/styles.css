@@ -17,7 +17,7 @@ body{
 }
 
 .logo{
-    width: 50%px;
+    width: 50%;
     text-align: center;
 }
 
@@ -324,6 +324,7 @@ div.vendedorOcomprador{
     flex-wrap: nowrap;
     align-items: left;
 }
+
 
 div.vendedorOcomprador input,
 div.vendedorOcomprador label{
